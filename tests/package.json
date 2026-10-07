@@ -1,0 +1,14 @@
+{
+  "name": "lu-khach-tests",
+  "private": true,
+  "description": "Automated play-throughs of Lữ Khách through its LK.debug hooks (Playwright + local Chrome)",
+  "scripts": {
+    "region1": "node play-region1.js",
+    "region2": "node play-region2.js",
+    "input": "node input.js",
+    "test": "node play-region1.js && node play-region2.js && node input.js"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

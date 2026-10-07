@@ -30,6 +30,7 @@ class CatchScene extends Phaser.Scene {
     this.idx = 0;
     this.over = false;
     this.wave = [];
+    this.waveNo = 0;                                 // counts drops, so a test driver sees a fresh wave
     this.rocks = [];
     this.now = 0;                                    // scene clock in seconds (scaled like the game)
     this.poseUntil = 0;                              // reach / hurt pose holds the hero still
@@ -46,7 +47,7 @@ class CatchScene extends Phaser.Scene {
 
     LK.debug = {
       scene: 'Catch',
-      state: () => ({ idx: this.idx, hearts: this.hearts.n, over: this.over,
+      state: () => ({ idx: this.idx, hearts: this.hearts.n, over: this.over, wave: this.waveNo,
         ready: this.wave.some(s => !s.done && s.right), wrong: this.wave.some(s => !s.done && !s.right) }),
       // stand under a scroll (the right one, or a wrong one) and let it fall into the hands
       act: ok => { const s = this.wave.find(x => !x.done && x.right === ok); if (s) { this.hero.x = s.x0; this.targetX = s.x0; } },
@@ -72,6 +73,7 @@ class CatchScene extends Phaser.Scene {
   /** The right scroll and its decoys appear in a row, then drop one after another. */
   spawnWave() {
     if (this.over) return;
+    this.waveNo += 1;
     const d = this.drops[this.idx];
     const others = this.drops.filter((_, i) => i !== this.idx).map(x => x.t);
     const decoys = this.easy ? [LK.pick(Math.random() < 0.5 ? d.near : others)] : [LK.pick(d.near), LK.pick(others)];

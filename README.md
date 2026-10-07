@@ -2,6 +2,8 @@
 
 Game vượt ải giúp thiếu nhi và thanh thiếu niên học thuộc câu gốc Kinh Thánh. Thế giới game lấy cảm hứng từ *Thiên Lộ Lịch Trình*: người lữ khách đi qua từng vùng và dùng **Lời Chúa làm gươm** để thắng những "lời dối" chặn đường. Hình ảnh do Game Asset Studio (app sinh asset chạy local, repo riêng) tạo bằng OpenAI GPT Image. Giọng đọc tiếng Việt dùng OpenAI TTS và đã được kiểm tra lại bằng nhận dạng giọng nói. Câu gốc là **Bản Truyền Thống 1926** (phạm vi công cộng), chép nguyên văn.
 
+Tài liệu: [thiết kế game](docs/GAME_DESIGN.md) · [ghi chú cho người và AI làm tiếp](CLAUDE.md).
+
 ## Chơi
 
 - Trên máy tính: mở `game\index.html` bằng Chrome hoặc Edge, không cần server.
@@ -81,3 +83,4 @@ APK ký bằng **cùng keystore với Word Island và Ollie's Farm** (`android\k
 - Game dùng Phaser 3.90 (`game\vendor\phaser.min.js`).
 - Mọi ảnh và tiếng được nhúng sẵn vào `assets.js`, nên game chạy được từ `file://` và trong WebView mà không gặp lỗi CORS.
 - Kích thước khung 1280×720, tự co giãn theo màn hình. Khi máy dựng dọc, game hiện lời nhắc xoay ngang.
+- Test chơi tự động: `cd tests`, `npm install`, `npm test`. Máy cần có Chrome. Test chơi hết 2 vùng và thử thao tác chạm/kéo/bắn thật; ảnh chụp lưu ở `build\test-shots\`.
