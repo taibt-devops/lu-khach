@@ -1,0 +1,98 @@
+{
+  "voices": {
+    "narrator": {
+      "voice": "coral",
+      "instructions": "Speak Vietnamese (Vietnam) naturally with correct tones. A warm, gentle storyteller reading to children: clear, slow, reverent when reading scripture, cheerful when praising."
+    },
+    "boss": {
+      "voice": "ash",
+      "instructions": "Speak Vietnamese (Vietnam) with correct tones, as a cute, harmless cartoon mud blob: slow, sleepy, droopy and gloomy, sighing a little, but funny and never scary."
+    }
+  },
+  "clips": {
+    "v-isa4031": {
+      "voice": "narrator",
+      "text": "Nhưng ai trông đợi Đức Giê-hô-va thì chắc được sức mới, cất cánh bay cao như chim ưng; chạy mà không mệt nhọc, đi mà không mòn mỏi. Ê-sai bốn mươi, câu ba mươi mốt."
+    },
+    "v-psa402": {
+      "voice": "narrator",
+      "text": "Ngài cũng đem tôi lên khỏi hầm gớm ghê, khỏi vũng bùn lấm; Ngài đặt chân tôi trên hòn đá, và làm cho bước tôi vững bền. Thi Thiên bốn mươi, câu hai."
+    },
+    "v-mat1128": {
+      "voice": "narrator",
+      "text": "Hỡi những kẻ mệt mỏi và gánh nặng, hãy đến cùng ta, ta sẽ cho các ngươi được yên nghỉ. Ma-thi-ơ mười một, câu hai mươi tám."
+    },
+    "intro-region": {
+      "voice": "narrator",
+      "text": "Chào mừng bạn đến Vũng Lầy Chán Nản. Hãy mang theo Lời Chúa để vượt qua nhé!"
+    },
+    "praise-1": {
+      "voice": "narrator",
+      "text": "Giỏi lắm, bạn ơi!"
+    },
+    "praise-2": {
+      "voice": "narrator",
+      "text": "Tuyệt vời quá đi!"
+    },
+    "try-again": {
+      "voice": "narrator",
+      "text": "Không sao, thử lại nào!"
+    },
+    "level-done": {
+      "voice": "narrator",
+      "text": "Qua ải rồi! Bạn đã nhớ thêm Lời Chúa."
+    },
+    "shield": {
+      "voice": "narrator",
+      "text": "Bạn nhận được Khiên Đức Tin!"
+    },
+    "region-done": {
+      "voice": "narrator",
+      "text": "Hoan hô! Bạn đã đi qua được Vũng Lầy Chán Nản rồi!"
+    },
+    "boss-intro": {
+      "voice": "boss",
+      "text": "Hừm... Ta là Bùn Buồn. Ở lại đây với ta đi..."
+    },
+    "lie-isa4031": {
+      "voice": "boss",
+      "text": "Bạn mệt quá rồi... nằm xuống đây ngủ luôn đi..."
+    },
+    "lie-psa402": {
+      "voice": "boss",
+      "text": "Không ai kéo bạn ra khỏi đống bùn này đâu..."
+    },
+    "lie-mat1128": {
+      "voice": "boss",
+      "text": "Gánh nặng quá... chẳng có chỗ nào để nghỉ đâu..."
+    },
+    "boss-ouch": {
+      "voice": "boss",
+      "text": "Ui da... sáng quá!"
+    },
+    "boss-defeat": {
+      "voice": "boss",
+      "text": "Ơ... ấm quá... cảm ơn bạn..."
+    },
+    "v-prv35": {
+      "voice": "narrator",
+      "text": "Hãy hết lòng tin cậy Đức Giê-hô-va, chớ nương cậy nơi sự thông sáng của con; phàm trong các việc làm của con, khá nhận biết Ngài, thì Ngài sẽ chỉ dẫn các nẻo của con. Châm Ngôn ba, câu năm và sáu."
+    },
+    "v-jhn146": {
+      "voice": "narrator",
+      "text": "Ta là đường đi, lẽ thật, và sự sống; chẳng bởi ta thì không ai được đến cùng Cha. Giăng mười bốn, câu sáu."
+    },
+    "v-psa11911": {
+      "voice": "narrator",
+      "text": "Tôi đã giấu lời Chúa trong lòng tôi, để tôi không phạm tội cùng Chúa. Thi Thiên một trăm mười chín, câu mười một."
+    },
+    "intro-region2": {
+      "voice": "narrator",
+      "text": "Chào mừng bạn đến Cửa Hẹp! Hãy giữ Lời Chúa trong lòng để đi đúng đường nhé!"
+    },
+    "region2-done": {
+      "voice": "narrator",
+      "text": "Hoan hô! Cửa Hẹp đã mở ra cho bạn rồi!"
+    }
+  }
+}

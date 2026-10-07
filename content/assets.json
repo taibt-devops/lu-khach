@@ -1,0 +1,138 @@
+{
+  "style": {
+    "name": "Lữ Khách",
+    "prompt": "cute storybook children's game art, soft painterly shading with clean dark-brown outlines, warm friendly colors, rounded shapes, gentle hopeful lighting, wholesome, not scary",
+    "recipe": {
+      "sprite_size": 512,
+      "padding": 12
+    }
+  },
+  "hero": {
+    "kind": "character",
+    "prompt": "a cheerful young traveler child about 10 years old with short dark hair, a simple green tunic with a brown belt, brown boots, a small brown backpack with a rolled blanket, holding a wooden walking staff, seen exactly from the side facing right, full body, standing"
+  },
+  "edits": {
+    "hero-sword": {
+      "base": "hero",
+      "prompt": "the same child now holding a glowing golden sword of light pointing forward in a brave ready stance instead of the staff, still seen exactly from the side facing right"
+    },
+    "hero-hurt": {
+      "base": "hero",
+      "prompt": "the same child sitting down after slipping in mud, a little embarrassed but okay, mud splashes on the boots, still seen from the side facing right"
+    },
+    "hero-cheer": {
+      "base": "hero",
+      "prompt": "the same child jumping for joy with both arms raised, big smile, still seen from the side facing right"
+    },
+    "boss-hit": {
+      "base": "boss",
+      "prompt": "the same mud blob flinching from a bright warm light, eyes squeezed shut, mud splattering, small sparkles of light around it"
+    },
+    "boss-defeated": {
+      "base": "boss",
+      "prompt": "the same mud blob melted into a flat calm puddle with a small relieved smile, the rain cloud is gone, a few little flowers sprouting beside it"
+    },
+    "lantern-on": {
+      "base": "lantern-off",
+      "prompt": "the same lantern now lit with a warm glowing golden flame inside and a soft glow around it"
+    },
+    "hero-bow": {
+      "base": "hero",
+      "prompt": "the same child now holding a simple wooden bow drawn back with a golden arrow ready, aiming forward and slightly upward, brave focused face, no staff, still seen exactly from the side facing right"
+    },
+    "hero-reach": {
+      "base": "hero",
+      "prompt": "the same child reaching both arms straight up high to catch something falling from the sky, looking up with a hopeful smile, no staff, still seen exactly from the side facing right"
+    }
+  },
+  "items": {
+    "boss": {
+      "kind": "prop",
+      "prompt": "a big cute sad blob monster made of brown swamp mud, droopy sleepy eyes, a pouting frown, mud dripping from its round soft body, a tiny grey rain cloud above its head, harmless and gloomy, not scary"
+    },
+    "sign": {
+      "kind": "item",
+      "prompt": "an empty wide wooden signboard made of one horizontal plank on a short post, blank with no text, front view"
+    },
+    "stone": {
+      "kind": "item",
+      "prompt": "a wide flat round grey stepping stone with a little moss, seen from the side at a low angle, blank"
+    },
+    "lantern-off": {
+      "kind": "item",
+      "prompt": "an old brass hanging lantern with glass panes, unlit, front view"
+    },
+    "heart": {
+      "kind": "item",
+      "prompt": "a glossy red heart icon"
+    },
+    "shield": {
+      "kind": "item",
+      "prompt": "a round golden shield with a simple cross emblem in the center, glowing softly, front view"
+    },
+    "sword": {
+      "kind": "item",
+      "prompt": "a glowing golden sword of light, diagonal, simple and elegant"
+    },
+    "rock": {
+      "kind": "item",
+      "prompt": "a round falling boulder of dark volcanic rock with glowing orange cracks and a short trail of little embers above it, cartoon, not scary"
+    },
+    "scroll": {
+      "kind": "item",
+      "prompt": "a wide open parchment scroll held horizontally with rolled ends on the left and right, cream paper, blank with no text, soft golden glow around it, front view"
+    },
+    "slab": {
+      "kind": "item",
+      "prompt": "a wide flat floating stone slab platform, thin and rectangular, a strip of green grass on top, a few small pebbles crumbling from its underside, seen from the side, blank"
+    },
+    "crow": {
+      "kind": "character",
+      "prompt": "a cute cartoon black crow flying with wings spread wide, round body, big mischievous eyes, small orange beak, seen exactly from the side facing right, funny and not scary"
+    },
+    "arrow": {
+      "kind": "item",
+      "prompt": "a simple wooden arrow with a shiny golden arrowhead and white feather fletching, perfectly horizontal pointing right"
+    }
+  },
+  "backgrounds": {
+    "bg-run": "a misty swamp marsh in soft morning light, side view panorama, a long muddy dirt path along the bottom third crossing the whole image from left to right, reeds, small pools and a few low trees, distant hills, the left and right edges look alike so the picture can repeat horizontally",
+    "bg-river": "a wide slough of murky brown-green water seen from the side, light mist over the water, reeds at the edges, a grassy bank far on the right, soft light, calm and empty in the middle",
+    "bg-night": "a quiet swamp forest path at night in deep blue tones, fireflies, light mist, calm and peaceful, not scary, empty foreground",
+    "bg-boss": "a large mud pit in a swamp clearing under grey clouds, one warm ray of sunlight breaking through the clouds, empty center, wide view",
+    "bg-map": "a storybook adventure map of a misty swamp region seen from above at an angle, a small village at the bottom left, a winding dirt path with little wooden bridges crossing marshes and a dark muddy pool in the middle, leading to a small wooden gate at the top right",
+    "bg-sinai": "a huge dark rocky mountain rising on the right side under swirling purple-grey storm clouds, small flashes of lightning, a few glowing embers in the air, a flat open sandy rocky ground along the bottom fifth crossing the whole image, wide side view, open empty sky in the upper middle, dramatic but gentle and child-friendly",
+    "bg-cliff": "high mountain cliffs in bright morning sun, a deep chasm full of soft white clouds far below, distant blue peaks, a few birds, wide side view panorama, open sky, empty middle, the left and right edges look alike so the picture can repeat horizontally",
+    "bg-gate": "a narrow wooden gate in a tall old stone wall on the left side with a warm golden light glowing above the gate, a meadow with a dirt path at the bottom, a dark crooked castle tower on a hill in the far right distance with tiny crows circling it, sunset sky in orange and purple, open sky in the middle, wide side view",
+    "bg-map2": "a storybook adventure map seen from above at an angle: at the bottom left the edge of a misty swamp, a winding dirt path climbing up past a tall smoking rocky mountain in the left middle, then across narrow cliffs over a cloudy chasm in the center, to a small narrow wooden gate in a long stone wall at the top right, a dark crooked tower with crows on a hill near the gate, soft warm colors"
+  },
+  "animations": {
+    "run": {
+      "base": "hero",
+      "fps": 10,
+      "poses": [
+        "running: right leg forward touching the ground, left leg back, arms swinging, staff in hand",
+        "running: legs passing under the body, body slightly higher",
+        "running: left leg forward touching the ground, right leg back, arms swinging the other way",
+        "running: legs passing under the body, body slightly higher, other arm forward"
+      ]
+    },
+    "jump": {
+      "base": "hero",
+      "fps": 8,
+      "poses": [
+        "crouching low with knees bent, about to jump",
+        "in the air jumping forward, knees tucked, arms up",
+        "landing with knees bent, arms out for balance"
+      ]
+    },
+    "fly": {
+      "base": "crow",
+      "fps": 8,
+      "poses": [
+        "flying with both wings raised high above the body",
+        "flying with both wings pushed down low below the body"
+      ]
+    }
+  }
+}

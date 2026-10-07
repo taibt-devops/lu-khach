@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Lữ Khách</title>
+<link rel="stylesheet" href="assets/fonts/baloo2.css">
+<style>
+  html, body { margin: 0; height: 100%; background: #1d2b22; overflow: hidden; touch-action: none;
+    -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+  #game { width: 100%; height: 100%; }
+  .overlay { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px;
+    background: #1d2b22; color: #fff8e7; font: 700 24px "Baloo 2", system-ui, sans-serif; text-align: center; padding: 24px; }
+  #rotate { display: none; z-index: 10; }
+  @media (orientation: portrait) and (max-width: 900px) { #rotate { display: flex; } }
+  .spin { width: 46px; height: 46px; border-radius: 50%; border: 5px solid #3d5244; border-top-color: #ffc93c; animation: s 0.9s linear infinite; }
+  @keyframes s { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<div id="game"></div>
+<div id="loading" class="overlay"><div class="spin"></div>Lữ khách đang lên đường…</div>
+<div id="rotate" class="overlay">Hãy xoay ngang máy để chơi nhé ↻</div>
+<script src="vendor/phaser.min.js"></script>
+<script src="assets.js"></script>
+<script src="src/content.js"></script>
+<script src="src/core.js"></script>
+<script src="src/scenes/boot.js"></script>
+<script src="src/scenes/map.js"></script>
+<script src="src/scenes/learn.js"></script>
+<script src="src/scenes/runner.js"></script>
+<script src="src/scenes/river.js"></script>
+<script src="src/scenes/lantern.js"></script>
+<script src="src/scenes/boss.js"></script>
+<script src="src/scenes/catch.js"></script>
+<script src="src/scenes/path.js"></script>
+<script src="src/scenes/archery.js"></script>
+<script src="src/scenes/result.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>

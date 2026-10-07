@@ -1,0 +1,39 @@
+{
+  "assets": {
+    "hero": 116,
+    "boss": 119,
+    "sign": 118,
+    "stone": 120,
+    "lantern-off": 121,
+    "heart": 122,
+    "shield": 124,
+    "sword": 123,
+    "bg-river": 125,
+    "bg-run": 126,
+    "bg-boss": 127,
+    "bg-map": 128,
+    "bg-night": 129,
+    "hero-sword": 130,
+    "hero-hurt": 131,
+    "hero-cheer": 132,
+    "boss-hit": 133,
+    "boss-defeated": 134,
+    "lantern-on": 135,
+    "rock": 143,
+    "scroll": 144,
+    "slab": 145,
+    "crow": 146,
+    "arrow": 147,
+    "bg-sinai": 148,
+    "bg-cliff": 149,
+    "bg-gate": 150,
+    "bg-map2": 151,
+    "hero-reach": 152,
+    "hero-bow": 153
+  },
+  "anims": {
+    "run": 3,
+    "jump": 4,
+    "fly": 5
+  }
+}
