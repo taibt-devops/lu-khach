@@ -1,0 +1,17 @@
+{
+  "run": [
+    "run0",
+    "run1",
+    "run2",
+    "run3"
+  ],
+  "jump": [
+    "jump0",
+    "jump1",
+    "jump2"
+  ],
+  "fly": [
+    "fly0",
+    "fly1"
+  ]
+}

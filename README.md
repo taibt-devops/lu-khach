@@ -41,12 +41,33 @@ Vùng 2 mở sau khi thắng boss Bùn Buồn: bấm nút **Cửa Hẹp ›** �
 - Câu gốc, cách chia cụm, các "bẫy" gần giống (`near`), các ải và lời dối của boss nằm ở `game\src\content.js`. Khi game khởi động, `LK.checkContent()` kiểm tra mọi cách chia đều ghép lại đúng nguyên văn câu.
 - Thông số ải nằm ở đầu từng file `game\src\scenes\*.js`: tốc độ, thời gian bùn dâng / dầu đèn, máu boss.
 
+### Hình ảnh và âm thanh nằm ở đâu
+
+| Thư mục | Nội dung |
+|---|---|
+| `art\` | **Ảnh gốc để sửa**: nhân vật và đồ vật là PNG nền trong suốt, ảnh nền là WebP chất lượng cao, `frames.json` liệt kê khung hoạt hình (run, jump, fly). |
+| `content\audio\` | Giọng đọc MP3: câu gốc, lời dẫn, lời boss. |
+| `game\assets.js` | Bản game thực sự dùng: mọi ảnh (đã thu nhỏ, nén WebP) và MP3 nhúng dạng data URI. Được sinh ra từ hai thư mục trên, đừng sửa tay. |
+
+**Sửa hình không cần studio hay key OpenAI**, chỉ cần Python có `pillow` và `numpy`:
+
+```powershell
+pip install pillow numpy
+# thay hoặc vẽ lại một file trong art\ (giữ đúng tên, ví dụ art\hero.png), rồi:
+python tools\assets.py export      # viết lại game\assets.js từ art\ + content\audio\
+python tools\assets.py sheet       # build\sheet.png: xem nhanh mọi hình trong art\
+```
+
+Thêm hình mới thì đặt file vào `art\` rồi dùng tên file (không có đuôi) làm key trong code. Ảnh nền đặt tên bắt đầu bằng `bg-`.
+
+### Sinh hình và giọng đọc mới (cần Game Asset Studio + key OpenAI)
+
 ```powershell
 $py = 'D:\code\game-asset-studio\.venv\Scripts\python.exe'   # Game Asset Studio phải đang chạy (127.0.0.1:8765)
 & $py tools\assets.py gen [--redo boss,bg-run]   # sinh ảnh còn thiếu (danh sách ở content\assets.json)
-& $py tools\assets.py sheet                       # build\sheet.png để duyệt
+& $py tools\assets.py art [--only boss,bg-run]   # chép ảnh từ studio vào art\ (ghi đè các file đó)
 & $py tools\audio.py                              # giọng đọc (content\audio.json) + tự kiểm tra bằng nhận dạng giọng nói
-& $py tools\assets.py export                      # gộp mọi ảnh + tiếng vào game\assets.js (data URI)
+& $py tools\assets.py export                      # gộp mọi ảnh + tiếng vào game\assets.js
 & $py tools\make_icons.py                         # icon Android
 .\android\build-apk.ps1 [-Install]                # APK (tăng versionCode trước khi cài đè)
 ```
